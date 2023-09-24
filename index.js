@@ -14,19 +14,19 @@ export const escapeMissingMarkdownV2Char = (text) => {
 }
 
 export const triggerAudit = (token) => {
-    return fetch(`https://api.luckblock.io/audit/${token}`, {
+    return fetch(`https://api.bitbot.world/audit/${token}`, {
         method: 'POST'
     })
         .then((data) => data.json());
 }
 
 export const fetchAuditStatus = (token) => {
-    return fetch(`https://api.luckblock.io/audit/${token}/status`)
+    return fetch(`https://api.bitbot.world/audit/${token}/status`)
         .then((data) => data.json());
 }
 
 export const fetchAuditData = (token) => {
-    return fetch(`https://api.luckblock.io/audit/${token}/json`)
+    return fetch(`https://api.bitbot.world/audit/${token}/json`)
         .then((data) => data.json());
 }
 
